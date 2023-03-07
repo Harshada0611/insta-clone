@@ -1,0 +1,55 @@
+* {
+    margin: 0rem;
+}
+
+#homeWrapper {
+    background: linear-gradient(to right, rgb(83, 1, 83), rgb(146, 7, 146), red, orange, yellow);
+
+    text-align: center;
+    color: whitesmoke;
+    font-family: candara;
+
+    height: 100vh;
+    padding-top: 5rem;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+input[type='email'],
+input[type='password'] {
+    margin-top: 1.5rem;
+    width: 20rem;
+    height: 2.5rem;
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    padding-left: 1rem;
+}
+
+
+
+p {
+    padding-top: 0.2rem;
+    padding-left: 0.5rem;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 1rem;
+}
+
+
+@media only screen and (min-width:200px) and (max-width:1000px) {
+    #checkbox {
+        display: flex;
+        width: 50%;
+        padding-left: -1rem;
+        margin-left: 3.5rem;
+    }
+}
