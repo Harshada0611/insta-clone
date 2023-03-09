@@ -21,13 +21,6 @@ app.get('/', (req, resp) => {
     resp.send('This is instaclone project')
 })
 
-app.post('/signup', async (req, resp) => {
-    let user = new User(req.body)
-    let result=await user.save()
-    resp.send(result)
-})
-
-
 app.post('/postform', async (req, resp) => {
     let postuser = new PostData(req.body)
     let postresult=await postuser.save()

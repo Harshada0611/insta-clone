@@ -55,7 +55,7 @@ function PostForm() {
 
   return (
     <div id='UserFormWrapper'>
-      <div><Navbar /></div>
+      <div><Navbar/></div>
       <div id='formWrapper'>
         <h4>POST DATA</h4>
         <div>
@@ -64,11 +64,9 @@ function PostForm() {
         <div id='senderName'>
           <input type='text' placeholder='Authour name' name='author' value={form.author} onChange={handleInputs} />
         </div>
-
         <div>
           <input type='text' placeholder='Location' name='location' value={form.location} onChange={handleInputs} />
         </div>
-
         <div>
           <textarea type='text' placeholder='Description' name='description' value={form.description} onChange={handleInputs} />
         </div>
