@@ -9,6 +9,7 @@ app.use(express.json())
 app.use(cors())
 
 const mongoose=require('mongoose')
+mongoose.set('strictQuery', false)
 DB='mongodb+srv://Harshadaa1997:Harshadaa1997@cluster0.cmxb8d3.mongodb.net/?retryWrites=true&w=majority'
 mongoose.connect(DB,{ useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=>{console.log('Connected to DB')})
