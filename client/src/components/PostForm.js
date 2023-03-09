@@ -41,6 +41,7 @@ function PostForm() {
 
   //upload image function
   const uploadImage = async () => {
+
     const imgData = new FormData()
     imgData.append('file', image)
     imgData.append("upload_preset", "insta_clone")
@@ -48,14 +49,14 @@ function PostForm() {
       //imgData is instace that we create in line no 31
       .then((resp) => {
         console.log(resp.data.url)
-       setForm({...form, imgUrl:resp.data.url})
+        setForm({ ...form, imgUrl: resp.data.url })
       })
       .catch((err) => { console.log('something went wrong', err) })
   }
 
   return (
     <div id='UserFormWrapper'>
-      <div><Navbar/></div>
+      <div><Navbar /></div>
       <div id='formWrapper'>
         <h4>POST DATA</h4>
         <div>

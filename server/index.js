@@ -1,7 +1,6 @@
 const express = require('express')
 const cors = require('cors')
 
-const User = require('./model/signup.js')
 const PostData=require('./model/postform.js')
 
 const app = express()
