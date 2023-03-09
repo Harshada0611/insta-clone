@@ -25,7 +25,7 @@ function PostForm() {
 
   //post data form
   const postData = async () => {
-    await axios.post('http://localhost:8000/postform', form)
+    await axios.post('https://insta-clone-74y2.onrender.com/postform', form)
       .then(resp => { //console.log(resp) 
       })
       .catch(err => { console.log(err) })

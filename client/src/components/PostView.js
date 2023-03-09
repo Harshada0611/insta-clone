@@ -7,8 +7,8 @@ import Card from './Card'
 function PostView() {
     const [postDataList, setPostDataList] = useState([])
     const getpostDataList = async () => {
-     fetch('http://localhost:8000/postview')
-       // fetch('https://server-insta-chi.vercel.app/postview')
+    // fetch('http://localhost:8000/postview')
+        fetch('https://insta-clone-74y2.onrender.com/postview')
             .then(resp => resp.json())
             .then(data =>{
                 console.log(data)
